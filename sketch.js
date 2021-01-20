@@ -72,6 +72,12 @@ if(ball.isTouching(block2)&&ball.bounceOff(block2)){
     ball.shapeColor = "red"
   }
 
-drawSprites();
+if(ball.isTouching(block4)){
+  ball.velocityX = 0  
+}
+
+
+
+  drawSprites();
 
 }
