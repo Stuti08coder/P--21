@@ -46,7 +46,7 @@ function setup(){
     
     edge3 = createSprite(450,5,880,10)
     edge3.shapeColor = "black"
-
+   music.play();
   }
 
 function draw() {
@@ -70,11 +70,13 @@ if(ball.isTouching(block2)&&ball.bounceOff(block2)){
 
   if(ball.isTouching(block4)&&ball.bounceOff(block4)){
     ball.shapeColor = "red"
+    ball.velocityX = 0
+    ball.velocityY = 0
   }
 
-if(ball.isTouching(block4)){
-  ball.velocityX = 0  
-}
+//if(ball.isTouching(block4)){
+  //ball.velocityX = 0  
+//}
 
 
 
